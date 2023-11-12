@@ -9,7 +9,7 @@ const initialTodos = [
   {
     id:2,
     text:'컴포넌트 스타일링하기',
-    done:true
+    done:false
   },
   {
     id:3,
@@ -48,7 +48,7 @@ export function TodoProvider({children}){
     <TodoStateContext.Provider value={state}>
       <TodoDispatchContext.Provider value={dispatch}>
         <TodoNextIdContext.Provider value={nextId}>
-        {children}  
+        {children}
         </TodoNextIdContext.Provider>
       </TodoDispatchContext.Provider>
     </TodoStateContext.Provider>
